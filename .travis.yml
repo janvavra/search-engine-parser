@@ -13,7 +13,7 @@ install:
 
 # Build script (If successfully built - no errors)
 script:
-  - pytest -s
+  - pytest -s --doctest-modules search_engine_parser
   - pylint search_engine_parser --exit-zero
   - ./scripts/pre_deploy_test.sh
 

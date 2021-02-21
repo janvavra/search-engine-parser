@@ -22,12 +22,8 @@ USER_AGENT_LIST = [
 
 
 def get_rand_user_agent():
-    user_agent = random.choice(USER_AGENT_LIST)
-    try:
-        user_agent = UserAgent().random
-    except:
-       pass
-    return user_agent
+    return UserAgent().random
+    
     
 
 

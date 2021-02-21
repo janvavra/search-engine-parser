@@ -29,11 +29,11 @@ class SearchItem(dict):
     """
     SearchItem is a dict of results containing keys (titles, descriptions, links and other
     additional keys dependending on the engine)
-    >>> result
+    > result
     <search_engine_parser.core.base.SearchItem object at 0x7f907426a280>
-    >>> result["description"]
+    > result["description"]
     Some description
-    >>> result["descriptions"]
+    > result["descriptions"]
     Same description
     """
     def __getitem__(self, value):
@@ -51,13 +51,13 @@ class SearchResult():
     """
     The SearchResults after the searching
 
-    >>> results = gsearch.search("preaching the choir", 1)
-    >>> results
+    >> results = gsearch.search("preaching the choir", 1)
+    >> results
     <search_engine_parser.core.base.SearchResult object at 0x7f907426a280>
 
     The object supports retreiving individual results by iteration of just by type
-    >>> results[0] # Returns the first result <SearchItem>
-    >>> results["descriptions"] # Returns a list of all descriptions from all results
+    >> results[0] # Returns the first result <SearchItem>
+    >> results["descriptions"] # Returns a list of all descriptions from all results
 
     It can be iterated like a normal list to return individual SearchItem
     """
